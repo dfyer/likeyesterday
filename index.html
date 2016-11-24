@@ -4,40 +4,25 @@
     <meta charset="utf-8">
     <title>Like Yesterday</title>
     <script type="text/javascript" src="jquery-3.1.1.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="/css/default.css" /> -->
-    <!--
-    <script>
-      func requestREST() {
-        let weatherURL = "http://apis.skplanetx.com/weather/current/minutely"
-        let param = [
-          "version":"1"
-          "city":"서울"
-          "county":"강남구"
-          "village":"도곡동"
-        ]
-
-        Alamofire.request(.GET, weatherURL, parameters: param, encoding: .URL, headers: ["appKey":"0b5e02ae-9e17-36f8-9e88-c087f2b9b97b"]).responseJSON(completionHandler: {
-          response in
-
-          switch response.result {
-          case .Success(let JSON):
-            print("Success with JSON: \(JSON)")
-
-          case .Failure(let error):
-            print("Request failed with error: \(error)")
-          }
-        } )
-      }
-    </script>
-    -->
-
   </head>
   <body>
     <a href="#" id="get-data">Get JSON data</a>
-    <div id="show-data"></div>
     <div id="access-result"></div>
-    <div id="sky"></div>
-    <div id="temperature"></div>
+
+    <div id="yesterday-title">Yesterday's Weather</div>
+    <div id="yesterday-data"></div>
+    <div id="yesterday-sky"></div>
+    <div id="yesterday-wspd"></div>
+    <div id="yesterday-temp"></div>
+    <div id="yesterday-extemp"></div>
+
+    <div id="today-title">Today's Weather</div>
+    <div id="today-data"></div>
+    <div id="today-sky"></div>
+    <div id="today-wspd"></div>
+    <div id="today-temp"></div>
+    <div id="today-extemp"></div>
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

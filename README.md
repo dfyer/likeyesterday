@@ -2,7 +2,7 @@
 
 Want to build a app that reports
 
-1. (In the morning,) TODAY's weather respect to YESTERDAY's weather.
+1. ("NOW WORKING" In the morning,) TODAY's weather respect to YESTERDAY's weather.
 2. (In the evening,) TOMORROW's weather respect to TODAY's weather.
 
 ## To Do
