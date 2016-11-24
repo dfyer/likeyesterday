@@ -1,0 +1,26 @@
+div.yesterday {
+    text-align: center;
+    color: black;
+}
+
+div.today {
+    text-align: center;
+    color: black;
+}
+
+div.legend {
+    text-align: center;
+    color: black;
+}
+
+div.wrapper {
+    background-color: gray;
+    color: black;
+    font-size: 20px;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    margin: 4px;
+    padding: 2px;
+}

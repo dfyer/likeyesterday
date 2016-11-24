@@ -2,26 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Like Yesterday</title>
+    <title>어제보다</title>
+    <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="jquery-3.1.1.js"></script>
   </head>
   <body>
     <a href="#" id="get-data">Get JSON data</a>
     <div id="access-result"></div>
 
-    <div id="yesterday-title">Yesterday's Weather</div>
-    <div id="yesterday-data"></div>
-    <div id="yesterday-sky"></div>
-    <div id="yesterday-wspd"></div>
-    <div id="yesterday-temp"></div>
-    <div id="yesterday-extemp"></div>
+    <div class="wrapper yesterday" id="yesterday-title">어제
+      <div class="yesterday" id="yesterday-sky"></div>
+      <div class="yesterday" id="yesterday-wspd"></div>
+      <div class="yesterday" id="yesterday-temp"></div>
+      <div class="yesterday" id="yesterday-extemp"></div>
+    </div>
 
-    <div id="today-title">Today's Weather</div>
-    <div id="today-data"></div>
-    <div id="today-sky"></div>
-    <div id="today-wspd"></div>
-    <div id="today-temp"></div>
-    <div id="today-extemp"></div>
+    <div class="wrapper" id="legend">
+      <div class="legend">--</div>
+      <div class="legend">날씨</div>
+      <div class="legend">풍속</div>
+      <div class="legend">기온</div>
+      <div class="legend">체감기온</div>
+    </div>
+
+    <div class="wrapper today" id="today-title">Today
+      <div class="today" id="today-sky"></div>
+      <div class="today" id="today-wspd"></div>
+      <div class="today" id="today-temp"></div>
+      <div class="today" id="today-extemp"></div>
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
   </body>
