@@ -4,47 +4,58 @@
     <meta charset="utf-8">
     <title>어제보다</title>
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   </head>
   <body>
     <a href="#" id="get-data">Get JSON data</a>
     <div id="access-result"></div>
 
-    <div class="wrapper yesterday" id="yesterday-title">어제
-      <div class="yesterday" id="yesterday-sky"></div>
-      <div class="yesterday" id="yesterday-wspd"></div>
-      <div class="yesterday" id="yesterday-temp"></div>
-      <div class="yesterday" id="yesterday-extemp"></div>
+    <div align="center">
+      <div class="wrapper yesterday col-xs-4" id="yesterday-title">어제
+        <div class="yesterday" id="yesterday-sky"></div>
+        <div class="yesterday" id="yesterday-wspd"></div>
+        <div class="yesterday" id="yesterday-temp"></div>
+        <div class="yesterday" id="yesterday-extemp"></div>
+      </div>
+
+      <div class="wrapper col-xs-4" id="legend">
+        <div class="legend">--</div>
+        <div class="legend">날씨</div>
+        <div class="legend">풍속</div>
+        <div class="legend">기온</div>
+        <div class="legend">체감기온</div>
+      </div>
+
+      <div class="wrapper today col-xs-4" id="today-title">Today
+        <div class="today" id="today-sky"></div>
+        <div class="today" id="today-wspd"></div>
+        <div class="today" id="today-temp"></div>
+        <div class="today" id="today-extemp"></div>
+      </div>
     </div>
 
-    <div class="wrapper" id="legend">
-      <div class="legend">--</div>
-      <div class="legend">날씨</div>
-      <div class="legend">풍속</div>
-      <div class="legend">기온</div>
-      <div class="legend">체감기온</div>
+    <footer class="footer">
+      <div class="container">
+        <div class="col-xs-3">
+          <select class="form-control" id="city">
+            <option value="">- 시/도 -</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <select class="form-control" id="county">
+            <option value="">- 시/군/구 -</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <select class="form-control" id="village">
+            <option value="">- 읍/면/동 -</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="get-weather">Get Weather</button>
+      </div>
     </div>
 
-    <div class="wrapper today" id="today-title">Today
-      <div class="today" id="today-sky"></div>
-      <div class="today" id="today-wspd"></div>
-      <div class="today" id="today-temp"></div>
-      <div class="today" id="today-extemp"></div>
-    </div>
-	
-    <div class="wrapper">
-      <select id="city">
-        <option value="">- Select City -</option>
-      </select>
-      <select id="county">
-        <option value="">- Select County -</option>
-      </select>
-      <select id="village">
-        <option value="">- Select Village -</option>
-      </select>
-      <button id="get-weather">Get Weather</button>
-    </div>
-
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
