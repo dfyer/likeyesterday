@@ -10,6 +10,29 @@
     <a href="#" id="get-data">Get JSON data</a>
     <div id="access-result"></div>
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-4">
+          <select class="form-control" id="city">
+            <option value="">- 시/도 -</option>
+          </select>
+        </div>
+        <div class="col-xs-4">
+          <select class="form-control" id="county">
+            <option value="">- 시/군/구 -</option>
+          </select>
+        </div>
+        <div class="col-xs-4">
+          <select class="form-control" id="village">
+            <option value="">- 읍/면/동 -</option>
+          </select>
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-primary" id="get-weather">Get Weather</button>
+        </div>
+      </div>
+    </div>
+
     <div align="center">
       <div class="wrapper yesterday col-xs-4" id="yesterday-title">어제
         <div class="yesterday" id="yesterday-sky"></div>
@@ -31,27 +54,6 @@
         <div class="today" id="today-wspd"></div>
         <div class="today" id="today-temp"></div>
         <div class="today" id="today-extemp"></div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="col-xs-3">
-          <select class="form-control" id="city">
-            <option value="">- 시/도 -</option>
-          </select>
-        </div>
-        <div class="col-xs-3">
-          <select class="form-control" id="county">
-            <option value="">- 시/군/구 -</option>
-          </select>
-        </div>
-        <div class="col-xs-3">
-          <select class="form-control" id="village">
-            <option value="">- 읍/면/동 -</option>
-          </select>
-        </div>
-        <button class="btn btn-primary" id="get-weather">Get Weather</button>
       </div>
     </div>
 
